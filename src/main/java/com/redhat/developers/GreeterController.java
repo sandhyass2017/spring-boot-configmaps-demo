@@ -16,7 +16,7 @@ public class GreeterController {
     @GetMapping("/greet/{user}")
     public String greet(@PathVariable("user") String user) {
         String prefix = System.getenv().getOrDefault("GREETING_PREFIX", "Hi");
-        log.info("Prefix :{} and User:{}", prefix, user);
+       // log.info("Prefix :{} and User:{}", prefix, user);
         if (prefix == null) {
             prefix = "Hello!";
         }
